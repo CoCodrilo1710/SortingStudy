@@ -243,8 +243,8 @@ void print(vector <long long>& arr, int n)
 
 void generate_vector(vector<long long> &v, long long maxim)
 {
-    random_device rd;
-    mt19937_64 eng(rd());
+    
+    mt19937_64 eng(time(NULL));
 
     uniform_int_distribution<long long> random(0, maxim);
 
